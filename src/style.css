@@ -326,6 +326,16 @@ a:focus {
   margin-bottom: var(--spacing-8);
 }
 
+/* Taylor's additional styles */
+.divider {
+  margin-left: var(--spacing-3);
+}
+
+.ttr {
+  margin-left: var(--spacing-3);
+  font-size: 75%;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
