@@ -33,6 +33,6 @@ And in this case, there is no longer a need to use a pre-processor to compile yo
 # Why use them?
 
 - You no longer need to use a pre-processor if you want to structure your styles using variables
-- You can re-assign new values to exisiting properties, which can lead to some pretty interesting implementations. Checkout this [dark-mode](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) example.
+- You can re-assign new values to existing properties, which can lead to some pretty interesting implementations. Checkout this [dark-mode](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) example.
 
 For a deep-dive into CSS Custom properties, have a look at [CSS-Tricks](https://css-tricks.com/making-custom-properties-css-variables-dynamic/).
