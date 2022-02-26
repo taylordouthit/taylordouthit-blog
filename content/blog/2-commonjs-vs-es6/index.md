@@ -2,9 +2,10 @@
 title: What is the difference between CommonJS and ES6 Modules?
 date: "2022-02-26"
 description: While working with Gatsby I encountered both CommonJS and ES6 Module syntax. Let us explore why that is and how they differ.
+headerImage: https://taylordouthit.com/static/c8d070959f1f18c8ccf9cdb2543a02bd/1d69c/gatsby.png
 ---
 
-![javascript logo](./gatsby.png)
+![gatsby logo](./gatsby.png)
 
 While working with [Gatsby 4](https://www.gatsbyjs.com/) today, I noticed that the syntax for importing code from external libraries differed between the files [gatsby-node.js](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) and [gatsby-browser.js](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/). In the `-node.js` file, it imported code using `require()`, while in the `-browser.js` file it imported code using the keywords `import` and `from`. Why is that?
 
