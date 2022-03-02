@@ -2,7 +2,6 @@
 title: Reference types vs. Value types in JavaScript
 date: "2022-03-02"
 description: Understanding this one concept in JavaScript will save you many headaches in the future!
-headerImage: https://taylordouthit.com/static/8c5a68b210c57abbcd2cb3742e18c8eb/6bdcf/javascript.png
 ---
 
 ![JavaScript logo](./javascript.png)
