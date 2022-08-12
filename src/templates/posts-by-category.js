@@ -1,32 +1,17 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const PostsByCategoryTemplate = ({ data, location, pageContext }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
+      <Seo title={`${pageContext.tag} posts`} />
+      <h1 itemProp="headline">{pageContext.tag}</h1>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -48,15 +33,6 @@ const BlogIndex = ({ data, location }) => {
                     {post.frontmatter.date}
                     <span className="divider">|</span>
                     <span className="ttr">{post.timeToRead} min read </span>
-                    <span className="divider">|</span>
-                    <span className="tags">
-                      {post?.frontmatter?.tags &&
-                        post?.frontmatter?.tags?.split(", ").map(tag => (
-                          <Link to={tag} itemProp="url" className="tag">
-                            {tag}
-                          </Link>
-                        ))}
-                    </span>
                   </small>
                 </header>
                 <section>
@@ -76,16 +52,19 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default PostsByCategoryTemplate
 
 export const pageQuery = graphql`
-  query {
+  query PostsByCat($categoryFilter: String) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { tags: { regex: $categoryFilter } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       nodes {
         excerpt
         fields {
@@ -95,7 +74,6 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          tags
         }
         timeToRead
       }

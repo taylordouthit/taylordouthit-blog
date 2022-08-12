@@ -3,6 +3,7 @@ title: What is the difference between CommonJS and ES6 Modules?
 date: "2022-02-26"
 description: While working with Gatsby I encountered both CommonJS and ES6 Module syntax. Let us explore why that is and how they differ.
 headerImage: https://taylordouthit.com/static/c8d070959f1f18c8ccf9cdb2543a02bd/1d69c/gatsby.png
+tags: JS, Gatsby
 ---
 
 ![gatsby logo](./gatsby.png)

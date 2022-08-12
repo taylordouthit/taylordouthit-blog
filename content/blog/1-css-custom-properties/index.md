@@ -2,6 +2,7 @@
 title: What are CSS Custom Properties?
 date: "2022-02-25"
 description: CSS has gotten support for custom properties (variables) in all modern browsers. Here is how to use them.
+tags: CSS
 ---
 
 CSS Custom Properties, sometimes called variables, allow you to create and assign a value that can be used throughout your stylesheet.

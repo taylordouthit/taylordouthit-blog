@@ -20,6 +20,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            frontmatter {
+              tags
+            }
           }
         }
       }
@@ -52,6 +55,31 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+  }
+
+  // Define a template for postsByCategory page
+  const postsByCategory = path.resolve(`./src/templates/posts-by-category.js`)
+
+  // Per category, create a page using the postsByCategory template
+  const tags = result.data.allMarkdownRemark.nodes
+    .map(node => node.frontmatter.tags)
+    .join(" ")
+    .replace(",", "")
+    .split(" ")
+
+  const uniqueTags = [...new Set(tags)]
+
+  if (uniqueTags.length > 0) {
+    uniqueTags.forEach(tag => {
+      createPage({
+        path: tag,
+        component: postsByCategory,
+        context: {
+          tag,
+          categoryFilter: `/${tag}/`,
         },
       })
     })
@@ -106,6 +134,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      tags: String
     }
 
     type Fields {

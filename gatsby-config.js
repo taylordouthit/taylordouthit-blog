@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Web Talk`,
+    title: `Taylor Douthit`,
     author: {
       name: `Taylor Douthit`,
-      summary: `who is trying to learn and write code the best he can.`,
+      summary: `Hi, I'm Taylor Douthit. I'm a professional consultant with nearly a decade of experience building websites and applications for clients. Occasionally, I like to write about the things I'm learning and thinking about here at my blog.`,
     },
     description: `Taylor Douthit's personal blog for all things web related.`,
     siteUrl: `https://taylordouthit.com`,
@@ -99,13 +99,14 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      tags
                     }
                   }
                 }
               }
             `,
             output: "/rss.xml",
-            title: "Web Talk by Taylor Douthit",
+            title: "Taylor Douthit by Taylor Douthit",
           },
         ],
       },
@@ -113,8 +114,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Web Talk`,
-        short_name: `Web Talk`,
+        name: `Taylor Douthit`,
+        short_name: `Taylor Douthit`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
