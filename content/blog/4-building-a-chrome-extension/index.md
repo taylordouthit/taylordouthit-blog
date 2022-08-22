@@ -2,6 +2,7 @@
 title: What I Learned Building My First Chrome Extension
 date: "2022-08-22"
 description: While I'm waiting for my extension to be reviewed by Google for publishing, I thought I'd recap what I learned building my first Chrome extension.
+headerImage: https://taylordouthit.com/static/1daf2aaa605561e94b389fc5bc766894/21b4d/site-blocker.png
 tags: Web, Products, JS
 ---
 
