@@ -67,7 +67,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const tags = result.data.allMarkdownRemark.nodes
     .map(node => node.frontmatter.tags)
     .join(" ")
-    .replace(",", "")
+    .replaceAll(", ", " ")
     .split(" ")
 
   const uniqueTags = [...new Set(tags)]
