@@ -14,8 +14,9 @@ const Layout = ({ location, title, children }) => {
         <h1 className="main-heading">
           <Link to="/">{title}</Link>
         </h1>
-        <Link class="projects" to="/projects">
-          Projects <LaptopIcon />
+        <Link className="projects" to="/projects">
+          <span>Projects</span>
+          <LaptopIcon />
         </Link>
       </>
     )

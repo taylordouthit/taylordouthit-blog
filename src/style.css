@@ -253,24 +253,33 @@ a:focus,
   text-decoration: none;
 }
 
+/* Custom classes */
+
 .projects {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.MuiSvgIcon-root {
-  margin-left: var(--spacing-2);
+.projects span {
+  margin-right: var(--spacing-2);
 }
 
-/* Custom classes */
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-summary {
+  display: flex;
+}
 
 .socials {
-  display: flex;
   margin-top: var(--spacing-4);
 }
 
 .socials a {
+  margin-top: var(--spacing-4);
   margin-right: var(--spacing-4);
 }
 
@@ -392,5 +401,8 @@ a:focus,
   ul,
   ol {
     list-style-position: inside;
+  }
+  .projects span {
+    display: none;
   }
 }

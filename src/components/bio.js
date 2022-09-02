@@ -32,51 +32,48 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
 
   return (
     <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          {author?.summary || null}{" "}
-          <div className="socials">
-            <Chip
-              label="/taylordouthit"
-              component="a"
-              icon={<LinkedInIcon />}
-              href="https://www.linkedin.com/in/taylordouthit/"
-              variant="outlined"
-              clickable
-            />
-            <Chip
-              label="/taydouthit"
-              component="a"
-              icon={<TwitterIcon />}
-              href="https://twitter.com/taydouthit"
-              variant="outlined"
-              clickable
-            />
-            <Chip
-              label="/taylordouthit"
-              component="a"
-              icon={<GitHubIcon />}
-              href="https://github.com/taylordouthit/"
-              variant="outlined"
-              clickable
-            />
-          </div>
-        </p>
-      )}
+      <div className="image-summary">
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.png"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+        <p>{author?.summary || null} </p>
+      </div>
+      <div className="socials">
+        <Chip
+          label="/taylordouthit"
+          component="a"
+          icon={<LinkedInIcon />}
+          href="https://www.linkedin.com/in/taylordouthit/"
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="/taydouthit"
+          component="a"
+          icon={<TwitterIcon />}
+          href="https://twitter.com/taydouthit"
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="/taylordouthit"
+          component="a"
+          icon={<GitHubIcon />}
+          href="https://github.com/taylordouthit/"
+          variant="outlined"
+          clickable
+        />
+      </div>
     </div>
   )
 }
