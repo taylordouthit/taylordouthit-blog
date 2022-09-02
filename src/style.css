@@ -253,7 +253,26 @@ a:focus,
   text-decoration: none;
 }
 
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiSvgIcon-root {
+  margin-left: var(--spacing-2);
+}
+
 /* Custom classes */
+
+.socials {
+  display: flex;
+  margin-top: var(--spacing-4);
+}
+
+.socials a {
+  margin-right: var(--spacing-4);
+}
 
 .global-wrapper {
   margin: var(--spacing-0) auto;

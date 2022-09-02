@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Chip from "@mui/material/Chip"
+import LaptopIcon from "@mui/icons-material/Laptop"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -13,7 +15,7 @@ const Layout = ({ location, title, children }) => {
           <Link to="/">{title}</Link>
         </h1>
         <Link class="projects" to="/projects">
-          Projects
+          Projects <LaptopIcon />
         </Link>
       </>
     )
