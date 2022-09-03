@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Chip from "@mui/material/Chip"
 import LaptopIcon from "@mui/icons-material/Laptop"
 
 const Layout = ({ location, title, children }) => {

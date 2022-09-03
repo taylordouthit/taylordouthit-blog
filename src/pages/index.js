@@ -50,11 +50,18 @@ const BlogIndex = ({ data, location }) => {
                     <span className="divider">|</span>
                     <span className="tags">
                       {post?.frontmatter?.tags &&
-                        post?.frontmatter?.tags?.split(", ").map(tag => (
-                          <Link to={tag} itemProp="url" className="tag">
-                            {tag}
-                          </Link>
-                        ))}
+                        post?.frontmatter?.tags
+                          ?.split(", ")
+                          .map((tag, index) => (
+                            <Link
+                              key={index}
+                              to={tag}
+                              itemProp="url"
+                              className="tag"
+                            >
+                              {tag}
+                            </Link>
+                          ))}
                     </span>
                   </small>
                 </header>
