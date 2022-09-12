@@ -13,7 +13,7 @@ export default function ActionAreaCard({
   link,
 }) {
   return (
-    <Card className="card" sx={{ maxWidth: 345 }}>
+    <Card className="card" sx={{ maxWidth: 300 }}>
       <a href={link}>
         <CardActionArea>
           <CardMedia component="img" height="350" image={image} alt={alt} />
