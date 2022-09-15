@@ -2,6 +2,7 @@
 title: "How I Became a Web Developer With a Psychology Degree"
 date: "2022-09-15"
 description: I'll share the story of how I landed in this awesome profession and hopefully empower others to do the same.
+headerImage: https://taylordouthit.com/static/60d10226f60b3c29658fc569af8ea689/eea4a/software-developer.jpg
 tags: Career, Web
 ---
 
