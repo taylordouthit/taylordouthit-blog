@@ -392,8 +392,8 @@ a:focus,
 }
 
 .projects-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-4);
 }
 
@@ -413,7 +413,7 @@ a:focus,
     list-style-position: inside;
   }
   .projects-container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .main-heading {
     font-size: var(--fontSize-5);
