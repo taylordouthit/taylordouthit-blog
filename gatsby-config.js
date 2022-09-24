@@ -3,7 +3,7 @@ module.exports = {
     title: `Taylor Douthit`,
     author: {
       name: `Taylor Douthit`,
-      summary: `Hi, I'm Taylor Douthit. I'm a professional consultant with nearly a decade of experience building websites and applications for clients. Occasionally, I like to write about the things I'm learning and thinking about here at my blog.`,
+      summary: `Full stack developer and consultant with over seven years of experience building websites and applications for clients. Occasionally, I like to write about the things I'm learning and thinking about here at my blog.`,
     },
     description: `Taylor Douthit's personal blog for all things web related.`,
     siteUrl: `https://taylordouthit.com`,
