@@ -3,7 +3,7 @@ title: "How to Review Code in a Pull Request"
 date: "2022-09-24"
 description: If you want to cultivate a great engineering culture that encourages collaboration and growth, you must look closely at how you conduct code reviews. The wrong approach can lead to a toxic environment that discourages engineers from contributing. The right approach can fuel growth, innovation, and wonderful outcomes for your organization, clients, and team.
 headerImage: https://taylordouthit.com/static/08271e00e25627be44cdfeeaffc5dd2d/a2510/pull-request.jpg
-tags: Engineering, Team Culture
+tags: Engineering, Team_Culture
 ---
 
 ![Illustration of a pull request](./pull-request.jpg)

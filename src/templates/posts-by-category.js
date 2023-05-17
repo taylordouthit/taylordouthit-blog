@@ -11,10 +11,11 @@ const PostsByCategoryTemplate = ({ data, location, pageContext }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={`${pageContext.tag} posts`} />
-      <h1 itemProp="headline">{pageContext.tag}</h1>
+      <h1 itemProp="headline">{pageContext.tag.replace("_", " ")}</h1>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+          const title =
+            post.frontmatter.title.replace("_", " ") || post.fields.slug
 
           return (
             <li key={post.fields.slug}>
@@ -26,7 +27,7 @@ const PostsByCategoryTemplate = ({ data, location, pageContext }) => {
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
+                      <span itemProp="headline">{title.replace("_", " ")}</span>
                     </Link>
                   </h2>
                   <small>

@@ -29,7 +29,8 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+          const title =
+            post.frontmatter.title.replace("_", " ") || post.fields.slug
           return (
             <li key={post.fields.slug}>
               <article
