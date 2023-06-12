@@ -8,7 +8,7 @@ tags: Teamwork, Team_Culture
 
 ![Photo of person shooting layup in basketball](./basketball.jpg)
 
-As a software engineer with nearly eight years of experience, I've worked on plenty of teams in various industries and domains. Lately, I've been reflecting on the qualities of these teams, especially those that I would deem "great". Today I'd like to share some of those reflections and their impressions on me. I won't delve into how to build great teams, but I will share my observations on what what qualities I believe need to be present in order to be highly successful.
+As a software engineer with nearly eight years of experience, I've worked on plenty of teams in various industries and domains. Lately, I've been reflecting on the qualities of these teams, especially those that I would deem "great". Today I'd like to share some of those reflections and their impressions on me. I won't delve into how to build great teams, but I will share my observations on what qualities I believe need to be present in order to be highly successful.
 
 _Before we begin, let me acknowledge that the importance of these qualities may vary depending on the context, industry, and organizational culture. However, in software development, I've found these qualities to be generally crucial. Removing just one can turn a team from great to good, and removing a few more can push them towards being average or even poor._
 
