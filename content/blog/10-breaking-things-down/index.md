@@ -3,7 +3,7 @@ title: "Breaking Things Down, Estimation, and Velocity"
 date: "2023-06-15"
 description: I discuss the challenges of software estimation and the impact of human biases, as well as strategies to improve estimation accuracy and the role of Goodhart's Law in project delays.
 headerImage: https://taylordouthit.com/static/d8272448bf94000de7ac444fe2ea3a70/828fb/stacking-dolls.jpg
-tags: Agile
+tags: Agile, Psychology
 ---
 
 ![Photo of stacking dolls lined up next to each other](./stacking-dolls.jpg)
