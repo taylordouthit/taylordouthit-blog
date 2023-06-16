@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://taylordouthit.com`,
     social: {
       twitter: `taydouthit`,
+      linkedin: `https://www.linkedin.com/in/taylordouthit/`,
     },
   },
   plugins: [
