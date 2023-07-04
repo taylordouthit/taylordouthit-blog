@@ -1,8 +1,8 @@
 ---
 title: "On Stress"
 date: "2023-06-30"
-description: A short reflection on stress.
-headerImage: https://taylordouthit.com/static/a0613a2d7e8d60011c7acfb7993b3af6/828fb/staircase.jpg
+description: A short reflection on that feeling in your gut and when the world starts spinning.
+headerImage: https://taylordouthit.com/static/c80e6f52c94ef71f1f6e6e848d066a9e/828fb/stress.jpg
 tags: Self_Improvement
 ---
 
@@ -10,9 +10,7 @@ tags: Self_Improvement
 
 Stress sucks. It really does. And there’s no way to completely remove it from your life, at least not permanently. It’s a fact of life. There are things you can do to manage it, though.
 
-Avoid alcohol. Get lots of sleep. Maintain a good diet and for the love of god, go for a walk and pick up a weight a couple of times a week. It’s not magic. It’s just the way our bodies work.
-
-Treat your body well, and you’ll feel good. Treat it badly, and you’ll find the stress will find ya.
+Avoid alcohol. Get lots of sleep. Maintain a good diet and for the love of god, go for a walk and pick up a weight a couple of times a week. It’s not magic. It’s just the way our bodies work. Treat your body well, and you’ll feel good. Treat it badly, and you’ll find the stress will find ya.
 
 I didn’t learn the value of regular exercise until I was 26, so the first few years out of college were pretty stressful. I had no money, no job, and a degree in a field completely unrelated to the jobs I was pursuing. It wasn’t easy those first couple of years. Luckily, I had family to fall back on, which is a privilege not everyone shares.
 
