@@ -12,6 +12,7 @@ import Chip from "@mui/material/Chip"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import TwitterIcon from "@mui/icons-material/Twitter"
 import GitHubIcon from "@mui/icons-material/GitHub"
+import LaptopIcon from "@mui/icons-material/Laptop"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -70,6 +71,14 @@ const Bio = () => {
           component="a"
           icon={<GitHubIcon />}
           href="https://github.com/taylordouthit/"
+          variant="outlined"
+          clickable
+        />
+        <Chip
+          label="Projects"
+          component="a"
+          icon={<LaptopIcon />}
+          href="/projects"
           variant="outlined"
           clickable
         />
