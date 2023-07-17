@@ -1,7 +1,7 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../layout/layout"
 import Seo from "../components/seo"
 import ActionAreaCard from "../components/card"
 import FocusSiteBlockerLogo from "../../static/fsb-logo.png"
